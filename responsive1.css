@@ -1,0 +1,31 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about, .my-skills, .works, .other-skills{
+  order: 10;
+}
+
+
+
+@media screen and (min-width: 700px) {
+   .about {
+	   order:1;
+    width: 50%;
+  }
+  .my-skills {
+    order: 2;
+    width: 50%;
+  }
+  
+}
+
+
+@media screen and (min-width: 850px) {
+  main, .header_in, .header, .nav, .content{
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
